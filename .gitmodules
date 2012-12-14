@@ -1,0 +1,48 @@
+[submodule "cookbooks/chef-jenkins"]
+	path = cookbooks/chef-jenkins
+	url = git://github.com/heavywater/chef-jenkins.git
+[submodule "cookbooks/runit"]
+	path = cookbooks/runit
+	url = git://github.com/opscode-cookbooks/runit.git
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = git://github.com/opscode-cookbooks/java.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git://github.com/opscode-cookbooks/apt.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = git://github.com/opscode-cookbooks/yum.git
+[submodule "cookbooks/iptables"]
+	path = cookbooks/iptables
+	url = git://github.com/opscode-cookbooks/iptables.git
+[submodule "cookbooks/application_nginx"]
+	path = cookbooks/application_nginx
+	url = git://github.com/opscode-cookbooks/application_nginx.git
+[submodule "cookbooks/application_php"]
+	path = cookbooks/application_php
+	url = git://github.com/opscode-cookbooks/application_php.git
+[submodule "cookbooks/php"]
+	path = cookbooks/php
+	url = git://github.com/opscode-cookbooks/php.git
+[submodule "cookbooks/apache2"]
+	path = cookbooks/apache2
+	url = git://github.com/opscode-cookbooks/apache2.git
+[submodule "cookbooks/chef-client"]
+	path = cookbooks/chef-client
+	url = git://github.com/opscode-cookbooks/chef-client.git
+[submodule "cookbooks/webserver-chef"]
+	path = cookbooks/webserver-chef
+	url = git://github.com/jpd4nt/webserver-chef.git
+[submodule "cookbooks/imagemagick"]
+	path = cookbooks/imagemagick
+	url = git://github.com/opscode-cookbooks/imagemagick.git
+[submodule "cookbooks/base-chef"]
+	path = cookbooks/base-chef
+	url = git://github.com/jpd4nt/base-chef.git
+[submodule "cookbooks/cron"]
+	path = cookbooks/cron
+	url = git://github.com/opscode-cookbooks/cron.git
+[submodule "cookbooks/git"]
+	path = cookbooks/git
+	url = git://github.com/opscode-cookbooks/git.git
