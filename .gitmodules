@@ -1,6 +1,3 @@
-[submodule "cookbooks/chef-jenkins"]
-	path = cookbooks/chef-jenkins
-	url = git://github.com/heavywater/chef-jenkins.git
 [submodule "cookbooks/runit"]
 	path = cookbooks/runit
 	url = git://github.com/opscode-cookbooks/runit.git
@@ -46,3 +43,18 @@
 [submodule "cookbooks/git"]
 	path = cookbooks/git
 	url = git://github.com/opscode-cookbooks/git.git
+[submodule "cookbooks/nginx"]
+	path = cookbooks/nginx
+	url = git://github.com/opscode-cookbooks/nginx.git
+[submodule "cookbooks/windows"]
+	path = cookbooks/windows
+	url = git://github.com/opscode-cookbooks/windows.git
+[submodule "cookbooks/ohai"]
+	path = cookbooks/ohai
+	url = git://github.com/opscode-cookbooks/ohai.git
+[submodule "cookbooks/application"]
+	path = cookbooks/application
+	url = git://github.com/opscode-cookbooks/application.git
+[submodule "cookbooks/jenkins"]
+	path = cookbooks/jenkins
+	url = git://github.com/DrillingInfo/chef-jenkins.git

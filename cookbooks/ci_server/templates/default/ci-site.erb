@@ -1,0 +1,52 @@
+upstream jenkins {
+  server 127.0.0.1:8080 fail_timeout=0;
+}
+upstream sonar {
+  server 127.0.0.1:8081 fail_timeout=0;
+}
+
+server {
+  listen 80 default;
+  #rewrite ^ https://$server_name$request_uri? permanent;
+  location /jenkins {
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_redirect http:// http://;
+
+    add_header Pragma "no-cache";
+
+    proxy_pass http://jenkins;
+  }
+
+  location /sonar {
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_redirect http:// http://;
+
+    add_header Pragma "no-cache";
+
+    proxy_pass http://sonar;
+  }
+}
+
+#server {
+  #listen 443 default ssl;
+  #server_name 127.0.0.1 *.mydomain.com;
+
+  #ssl_certificate           /etc/ssl/certs/my.crt;
+  #ssl_certificate_key       /etc/ssl/private/my.key;
+
+  #ssl_session_timeout  5m;
+  #ssl_protocols  SSLv3 TLSv1;
+  #ssl_ciphers HIGH:!ADH:!MD5;
+  #ssl_prefer_server_ciphers on;
+
+  # auth_basic            "Restricted";
+  # auth_basic_user_file  /home/jenkins/htpasswd;
+
+  
+#}
