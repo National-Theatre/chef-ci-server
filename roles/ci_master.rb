@@ -18,6 +18,10 @@ env_run_lists(
 
 default_attributes(
   "jenkins" => {
+    "server" => {
+      "prefix" => "/jenkins",
+      "group" => "jenkins"
+    },
     "http_proxy" => {
     }
   },
